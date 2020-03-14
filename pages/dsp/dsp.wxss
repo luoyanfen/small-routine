@@ -1,0 +1,160 @@
+/* pages/dsp/dsp.wxss */
+/* 单击导航栏的颜色 */
+.active {
+  color: rgb(237, 91, 0);
+}
+/* 头部 */
+.tou{
+position: fixed;
+top:0;
+z-index: 1000;
+background-color: white;
+
+}
+.top-container {
+  display: flex;
+  justify-content: space-around;
+}
+/* 滑动样式 */
+.scroll {
+  width: 100%;
+  height: 50rpx;
+  display: flex;
+}
+/* 导航栏没单击的样式 */
+.scroll view {
+  font-size: 18px;
+  height: 46rpx;
+  line-height: 45rpx;
+  color: #333;
+  flex-shrink: 0;
+  margin-right: 50rpx;
+  font-weight: bold;
+}
+/* 第一个导航距离边框的距离 */
+.scroll view:first-child {
+  margin-left: 20rpx;
+}
+/* 第二个距离边框的距离 */
+.scroll view:last-child {
+  margin-right: 20rpx;
+}
+/* 导航栏下边的线 */
+.scroll .active {
+  border-bottom: 4rpx solid rgb(237, 91, 0);
+  color: rgb(237, 91, 0);
+}
+/* 图片整体盒子 */
+.video-bigbox{
+padding-top: 54rpx; 
+
+}
+.video-items{
+padding-top: 6rpx;
+
+
+}
+.picture-word {
+  margin-top: 12rpx;
+}
+
+.picture-box {
+  width: 100%;
+  height: 465rpx;
+  background-color: #fff;
+  position: relative;
+}
+
+.word {
+  position: absolute;
+  top: 10rpx;
+  left: 30rpx;
+  width: 700rpx;
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+/* 图片 */
+.video-img {
+  width: 100%;
+  height: 388rpx;
+}
+
+/* 图片底部样式 */
+
+.buttom {
+  display: flex;
+  width: 100%;
+}
+
+.buttom-ming {
+  display: flex;
+  justify-content: space-between;
+  height: 60rpx;
+  width: 450rpx;
+  font-size: 26rpx;
+  align-items: center;
+  color: #aaaab9;
+}
+
+.yu {
+  width: 200rpx;
+  height: 40rpx;
+  background-color: #ededf5;
+  border-radius: 20rpx;
+  line-height: 40rps;
+  text-align: center;
+  margin-left: 12rpx;
+}
+
+.kun {
+  width: 100rpx;
+  height: 40rpx;
+  background-color: #ededf5;
+  border-radius: 20rpx;
+  line-height: 40rps;
+  text-align: center;
+}
+
+.zhou {
+  width: 100rpx;
+  height: 40rpx;
+  background-color: #ededf5;
+  border-radius: 20rpx;
+  line-height: 40rps;
+  text-align: center;
+}
+/* 转发和删除按钮 */
+.buttom-images {
+  display: flex;
+  justify-content: space-around;
+  height: 60rpx;
+  width: 120rpx;
+  padding-left: 172rpx;
+  align-items: center;
+}
+
+.images1 {
+  height: 30rpx;
+  width: 30rpx;
+}
+
+.images2 {
+  height: 30rpx;
+  width: 30rpx;
+}
+
+/* 播放按钮 */
+.play {
+  top: 132rpx;
+  left: 312rpx;
+  position: absolute;
+  height: 120rpx;
+  width: 120rpx;
+}
+
+.play-video {
+  height: 100rpx;
+  width: 100rpx;
+}

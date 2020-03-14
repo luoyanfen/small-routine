@@ -1,0 +1,296 @@
+.a {
+  width: 300rpx;
+  height: 200rpx;
+  margin-left: 40rpx;
+}
+
+.jintian {
+  width: 100%;
+  margin-top: 60rpx;
+  color: rgb(202, 198, 198);
+  margin-left: 40rpx;
+}
+
+.zhizhuxia {
+  display: flex;
+  margin-top: 20rpx;
+}
+
+.img1 {
+  width: 300rpx;
+  height: 200rpx;
+  border-radius: 10rpx;
+}
+
+.zhizhuxia1 {
+  padding-left: 18px;
+  margin-top: 8rpx;
+}
+
+.zhizhuxia2 {
+  height: 30rpx;
+  padding-bottom: 0rpx;
+  font-weight: 100;
+}
+
+.zhizhuxia3 {
+  color: rgb(202, 198, 198);
+  font-weight: 100;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 26rpx;
+}
+
+.zhizhuxia4 {
+  color: rgb(202, 198, 198);
+  font-weight: 100;
+  height: 30rpx;
+  padding-bottom: 30rpx;
+  font-size: 26rpx;
+  margin-left: 6rpx;
+}
+
+.miaoshu {
+  display: flex;
+}
+
+.miaoshu1 {
+  width: 26rpx;
+  height: 24rpx;
+  margin-bottom: 6rpx;
+}
+
+.miaoshu2 {
+  width: 26rpx;
+  height: 24rpx;
+  margin-top: 28rpx;
+}
+
+.miaoshu3 {
+  width: 26rpx;
+  height: 24rpx;
+  margin-top: 28rpx;
+}
+
+.miaoshu4 {
+  width: 26rpx;
+  height: 24rpx;
+  margin-top: 28rpx;
+}
+
+.miaoshu5 {
+  width: 26rpx;
+  height: 24rpx;
+  margin-top: 28rpx;
+}
+
+.miaoshu6 {
+  width: 26rpx;
+  height: 24rpx;
+  margin-top: 28rpx;
+}
+
+.shaoer {
+  display: flex;
+  margin-top: 28rpx;
+}
+
+.img2 {
+  width: 300rpx;
+  height: 200rpx;
+  border-radius: 10rpx;
+}
+
+.shaoer1 {
+  padding-left: 18px;
+  margin-top: 26rpx;
+}
+
+.shaoer2 {
+  height: 8rpx;
+  padding-bottom: 0rpx;
+  margin-bottom: 20rpx;
+  font-weight: 100;
+}
+
+.shaoer3 {
+  color: rgb(202, 198, 198);
+  font-weight: 100;
+  height: 26rpx;
+  line-height: 80rpx;
+  margin-bottom: 20rpx;
+  font-size: 26rpx;
+}
+
+.shaoer4 {
+  color: rgb(202, 198, 198);
+  font-weight: 100;
+  height: 30rpx;
+  line-height: 80rpx;
+  font-size: 26rpx;
+  margin-left: 6rpx;
+}
+
+.zongyi {
+  display: flex;
+  margin-top: 28rpx;
+}
+
+.img3 {
+  width: 300rpx;
+  height: 200rpx;
+  border-radius: 10rpx;
+}
+
+.zongyi1 {
+  padding-left: 18px;
+  margin-top: 60rpx;
+}
+
+.zongyi2 {
+  height: 8rpx;
+  padding-bottom: 0rpx;
+  margin-bottom: 20rpx;
+  font-weight: 100;
+}
+
+.zongyi3 {
+  color: rgb(202, 198, 198);
+  font-weight: 100;
+  height: 40rpx;
+  line-height: 50rpx;
+  margin-bottom: 20rpx;
+  font-size: 26rpx;
+}
+
+.zongyi4 {
+  color: rgb(202, 198, 198);
+  font-weight: 100;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 26rpx;
+  margin-left: 6rpx;
+}
+
+.jilupian {
+  display: flex;
+  margin-top: 30rpx;
+}
+
+.img4 {
+  width: 300rpx;
+  height: 200rpx;
+  border-radius: 10rpx;
+}
+
+.jilupian1 {
+  padding-left: 18px;
+  margin-top: 30rpx;
+}
+
+.jilupian2 {
+  height: 26rpx;
+  padding-bottom: 0rpx;
+  margin-bottom: 20rpx;
+  font-weight: 100;
+}
+
+.jilupian3 {
+  color: rgb(202, 198, 198);
+  font-weight: 100;
+  height: 10rpx;
+  line-height: 50rpx;
+  margin-bottom: 20rpx;
+  font-size: 26rpx;
+}
+
+.jilupian4 {
+  color: rgb(202, 198, 198);
+  font-weight: 100;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 26rpx;
+  margin-left: 6rpx;
+}
+
+.dianshiju {
+  display: flex;
+  margin-top: 32rpx;
+}
+
+.img5 {
+  width: 300rpx;
+  height: 200rpx;
+  border-radius: 10rpx;
+}
+
+.dianshiju1 {
+  padding-left: 18px;
+  margin-top: 34rpx;
+}
+
+.dianshiju2 {
+  height: 20rpx;
+  padding-bottom: 0rpx;
+  margin-bottom: 20rpx;
+  font-weight: 100;
+}
+
+.dianshiju3 {
+  color: rgb(202, 198, 198);
+  font-weight: 100;
+  height: 12rpx;
+  line-height: 50rpx;
+  margin-bottom: 20rpx;
+  font-size: 26rpx;
+}
+
+.dianshiju4 {
+  color: rgb(202, 198, 198);
+  font-weight: 100;
+  height: 60rpx;
+  line-height: 80rpx;
+  font-size: 26rpx;
+  margin-left: 6rpx;
+}
+
+.dongman {
+  display: flex;
+  margin-top: 32rpx;
+}
+
+.img6 {
+  width: 300rpx;
+  height: 200rpx;
+  border-radius: 10rpx;
+}
+
+.dongman1 {
+  padding-left: 18px;
+  margin-top: 26rpx;
+}
+
+.dongman2 {
+  height: 20rpx;
+  padding-bottom: 0rpx;
+  margin-bottom: 20rpx;
+  font-weight: 100;
+}
+
+.dongman3 {
+  color: rgb(202, 198, 198);
+  font-weight: 100;
+  height: 10rpx;
+  line-height: 50rpx;
+  margin-bottom: 20rpx;
+  font-size: 26rpx;
+}
+
+.dongman4 {
+  color: rgb(202, 198, 198);
+  font-weight: 100;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 26rpx;
+  margin-left: 6rpx;
+}

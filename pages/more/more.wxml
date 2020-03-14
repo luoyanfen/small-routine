@@ -1,0 +1,219 @@
+<view>
+  <view box-top>
+    <view class="box-top1">
+      <scroll-view scroll-x>
+        <view class="fenlei1">
+          <view class="fenlei2">
+            <span>最新</span>
+          </view>
+          <view class="fenlei2">最热</view>
+          <view class="fenlei2">好评</view>
+          <view class="fenlei2">豆瓣好评</view>
+          <view class="fenlei2">知乎高分</view>
+          <view class="fenlei2"></view>
+          <view class="fenlei2"></view>
+          <view class="fenlei2"></view>
+          <view class="fenlei2"></view>
+          <view class="fenlei2"></view>
+          <view class="fenlei2"></view>
+          <view class="fenlei2"></view>
+          <view class="fenlei2"></view>
+          <view class="fenlei2"></view>
+        </view>
+      </scroll-view>
+    </view>
+    <view class="box-top1">
+      <scroll-view scroll-x>
+        <view class="fenlei1">
+          <view class="fenlei2">
+            <span>全部</span>
+          </view>
+          <view class="fenlei2">内地</view>
+          <view class="fenlei2">中国香港</view>
+          <view class="fenlei2">美国</view>
+          <view class="fenlei2">欧洲</view>
+          <view class="fenlei2">其他</view>
+          <view class="fenlei2">中国台湾</view>
+          <view class="fenlei2">日本</view>
+          <view class="fenlei2">韩国</view>
+          <view class="fenlei2">印度</view>
+          <view class="fenlei2">泰国</view>
+          <view class="fenlei2">英国</view>
+          <view class="fenlei2">法国</view>
+          <view class="fenlei2">其他</view>
+        </view>
+      </scroll-view>
+    </view>
+    <view class="box-top1">
+      <scroll-view scroll-x>
+        <view class="fenlei1">
+          <view class="fenlei2">
+            <span>全部</span>
+          </view>
+          <view class="fenlei2">奥斯卡</view>
+          <view class="fenlei2">奥斯卡</view>
+          <view class="fenlei2">电影节</view>
+          <view class="fenlei2">蓝光</view>
+          <view class="fenlei2">迪士尼</view>
+          <view class="fenlei2">华纳</view>
+          <view class="fenlei2">福克斯</view>
+          <view class="fenlei2">派拉蒙</view>
+          <view class="fenlei2">环球</view>
+          <view class="fenlei2">索尼</view>
+          <view class="fenlei2">狮门</view>
+          <view class="fenlei">杜比</view>
+        </view>
+      </scroll-view>
+    </view>
+    <view class="box-top1">
+      <scroll-view scroll-x>
+        <view class="fenlei1">
+          <view class="fenlei2">
+            <span>全部</span>
+          </view>
+          <view class="fenlei2">剧情</view>
+          <view class="fenlei2">喜剧</view>
+          <view class="fenlei2">动作</view>
+          <view class="fenlei2">爱情</view>
+          <view class="fenlei2">惊悚</view>
+          <view class="fenlei2">犯罪</view>
+          <view class="fenlei2">悬疑</view>
+          <view class="fenlei2">战争</view>
+          <view class="fenlei2">科幻</view>
+          <view class="fenlei2">动画</view>
+          <view class="fenlei2">其他</view>
+        </view>
+      </scroll-view>
+    </view>
+    <view class="box-top1">
+      <scroll-view scroll-x>
+        <view class="fenlei1">
+          <view class="fenlei2">
+            <span>全部</span>
+          </view>
+          <view class="fenlei2">2019</view>
+          <view class="fenlei2">2018</view>
+          <view class="fenlei2">2017</view>
+          <view class="fenlei2">2016</view>
+          <view class="fenlei2">2015</view>
+          <view class="fenlei2">2014</view>
+          <view class="fenlei2">2013</view>
+          <view class="fenlei2">2012</view>
+          <view class="fenlei2">2011</view>
+          <view class="fenlei2">2010</view>
+          <view class="fenlei2">其他</view>
+        </view>
+      </scroll-view>
+    </view>
+    <scroll-view scroll-x>
+    <view class="box-top2">
+    <view class="{{custom==index?'active':''}}" bindtap="onClick" wx:for="{{list}}" wx:key="{{index}}" data-id="{{index}}">{{item}}</view>
+  </view>
+</scroll-view>
+  </view>
+  <view class="box-bottom">
+    <view class="boxa">
+      <view class="box2">
+        <image class="img" src="https://i.gtimg.cn/qqlive/img/jpgcache/files/qqvideo/q/q53es4buzycdpdf_y.jpg"></image>
+        <view class="box3">洪熙官之天地英雄</view>
+      </view>
+      <view class="box4">
+        <image class="img" src="https://i.gtimg.cn/qqlive/img/jpgcache/files/qqvideo/q/q32hs5nrt4c5onv_y.jpg"></image>
+        <view class="box3">疯狂机器城</view>
+      </view>
+      <view class="box5">
+        <image class="img" src="https://i.gtimg.cn/qqlive/img/jpgcache/files/qqvideo/p/phe25e2yttjua3i_y.jpg"></image>
+        <view class="box3">防弹武僧</view>
+      </view>
+    </view>
+
+    <view class="boxb">
+      <view class="box2">
+        <image class="img" src="https://i.gtimg.cn/qqlive/img/jpgcache/files/qqvideo/g/g1urpvjk93tsidu_y.jpg"></image>
+        <view class="box3">卧虎悍匠</view>
+      </view>
+      <view class="box4">
+        <image class="img" src="https://i.gtimg.cn/qqlive/img/jpgcache/files/qqvideo/6/6101d0cbs6uqeee_y.jpg"></image>
+        <view class="box3">鼠胆英雄</view>
+      </view>
+      <view class="box5">
+        <image class="img" src="https://i.gtimg.cn/qqlive/img/jpgcache/files/qqvideo/m/mzc00200u7k9anz_y.jpg"></image>
+        <view class="box3">天剑修仙传</view>
+      </view>
+    </view>
+
+    <view class="boxb">
+      <view class="box2">
+        <image class="img" src="https://i.gtimg.cn/qqlive/img/jpgcache/files/qqvideo/9/96sxjj429lictza_y.jpg"></image>
+        <view class="box3">蜘蛛侠.英雄远征</view>
+      </view>
+      <view class="box4">
+        <image class="img" src="https://i.gtimg.cn/qqlive/img/jpgcache/files/qqvideo/m/mzc00200d618rny_y.jpg"></image>
+        <view class="box3">大明诡事录</view>
+      </view>
+      <view class="box5">
+        <image class="img" src="https://i.gtimg.cn/qqlive/img/jpgcache/files/qqvideo/e/euiuhsdyi8h20ck_y.jpg"></image>
+        <view class="box3">阿拉丁</view>
+      </view>
+    </view>
+
+    <view class="boxb">
+      <view class="box2">
+        <image class="img" src="https://i.gtimg.cn/qqlive/img/jpgcache/files/qqvideo/m/mzc0020083qtc7f_y.jpg"></image>
+        <view class="box3">捕快卜慢</view>
+      </view>
+      <view class="box4">
+        <image class="img" src="https://i.gtimg.cn/qqlive/img/jpgcache/files/qqvideo/j/j6tsvb1ly9zlxg1_y.jpg"></image>
+        <view class="box3">掘地三尺</view>
+      </view>
+      <view class="box5">
+        <image class="img" src="https://i.gtimg.cn/qqlive/img/jpgcache/files/qqvideo/t/t0bmxpivc7ix2xs_y.jpg"></image>
+        <view class="box3">万事屋</view>
+      </view>
+    </view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</view>

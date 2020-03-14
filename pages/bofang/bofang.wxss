@@ -1,0 +1,347 @@
+/* pages/bofang/bofang.wxss */
+
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1568774279280#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAATcAAsAAAAACZgAAASPAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDKgqGMIUHATYCJAMUCwwABCAFhG0HVhsZCFFUTfJkXxXvCoAcYwztyYaiwIOst13yd/4KFs/zv8UGUb/f9ux9zBsk0ahNQyHJdFJnSMRIyYRCacwnAC53P43awEtwjA2SQEJZYgEWjrU0l3mg64OwEepJIo7A364pQZoOpNrQe/p37Zg0g8h0e8Qs/T6yAQIOzdfA/8HltLE0sHlAOX5zbQwwDiigMbYt0IAKJGFvGLu8yOMQUDKQEZRP9+/Q5vRxAmTiuxraCSWvIIuCJBUsjUfwFZQK4Uu3AG/v+/KFUjSgIkKfeukdbdg8mn+A5zg+DgrWcHqArQIDS3DIqND4UAuCS5GSHF+3g4LRS/FrXf1hRGiyt/IXr6CkBJRxAknRhRWIP4Qcv6bFOkgWlGOKSEGkWvQA2dchDGdJCdTBHykCXXybxxNSX9j7UqhBWkiCtByikIkLasFshqE9HorqfVW0tJMdlnQgyJMSSEkuZWcsLmalKCpCSE9YXIrKWGFxM7t7KYqNHvJT1hwkIOXtTzvJHU/aAhG8vPlpayWMcfK6ZJOK2vB2VjSkyPE/ZQ8HxdIsdmJJh09RGwvApxC6JzMT2GdRrLSumo00PZ9xYD5M3pid0LS00cNFWdm7uSya2NyNdyWjbiW1o6yuxazFZUuJfdJBZndHSpy7daJo+MyJ2dGRzc6J29KRztSRAH6sG+peWjPC4hLWceJWe6o9e6p+nJVJSnsk9+Htto9disqbW9lPT9wQzUYL5QAlKmEqtFPPHRMGMCb6HvQaFUau65RfXdPCnRAy09XYYDlSDspftTfXbzKFBwg3zRd6E6lCsSWzJW31omBVplvJ5cldoWNLaCFr7o5Aj1lcYw9wg713lZWPuYS52iurtjBlBsaBAWGFOUDCuZS5vmI0JtRpdL13ggm1NbVJglyCCnUtBvaAyjcpq6y8QK5Z9Lc1yxWYF7sqNlclF9yy/SsouCmJ/DQzYyKmqZI2M9vOY8JTkd3m/50ynzI9NPvaFivTb0bEVe318b3NiPOxsuMrSpHcEbH1hdVReXGfwmM+OZjGGJwGPgZuPKL2sgwuwneGFCnqO48e3TgPMaC4cxEC+XyPuY182ycrfEQ8xAc1nfUr4A6AfMR+u3rUasuvBYdrvdwCfqff8OwuruoDnV9tywH4/o8PyvPqZqZggH+C1Zj181TFIwDwE8fRFRFLxgQ8NPHlzgfDTYszK/4Vzk8ThZb7MNLuKwmLgm4EKtMHUzBEO34JoWwFScEeShZqq8vaVmokLgJzRwCi4Qyq5gOm4Yp2/A1Czx+SRkQouQbMW5aNi1TGTFrIxq8/9E2aOKZGlJ/5Sm4ZaY5zPMonceF7cDIcpyNnSoiHmFF8u1MRBx1OYzyB0yiKUsw4DcjI0BPJZqORU/SioUljUM4Y0QSxoZY/aMhIJRyntVCZz78irlJE44qGMvMnwgp+56gop9AAfRYmjRoupffaN9fUhnDwqB6WiqEq1JPICKbQonhQgBhiaNDBn5nJo2a9psLh9OL4HrcBJfr0CFRMXEIS6eDr1LK3wygJbIlrJdvCIG1PXJXuFnilTmwCAAA=') format('woff2')
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-xiaoxi:before {
+  content: "\e64d";
+}
+
+.icon-fenxiang:before {
+  content: "\e606";
+}
+
+.icon-sanjiaoxing:before {
+  content: "\e607";
+}
+
+.icon-woxihuande:before {
+  content: "\e60a";
+}
+.size {
+  font-size: 24px;
+  color: #fff;
+  font-weight: bolder;
+}
+
+.top {
+  width: 100%;
+  height: 130rpx;
+  position: fixed;
+  color: #fff;
+  background-color: #2a3c4d;
+  z-index: 1000;
+}
+
+.top-top {
+  box-sizing: border-box;
+  display: flex;
+  height: 130rpx;
+  font-size: 18px;
+  padding-top: 65rpx;
+}
+
+.back {
+  display: inline-block;
+  width: 60rpx;
+  height: 60rpx;
+  font-size: 20px;
+  font-weight: bolder;
+  margin-left: 20rpx;
+  margin-right: 200rpx;
+}
+
+.shipin {
+  padding-top: 130rpx;
+  width: 750rpx;
+}
+
+.shipin-bofang {
+  width: 750rpx;
+  height: 660rpx;
+}
+
+.bofang-top {
+  width: 750rpx;
+  height: 421rpx;
+  position: relative;
+  z-index: 0;
+}
+
+.tu {
+  width: 750rpx;
+}
+
+.bofang {
+  width: 750rpx;
+  height: 425rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(130, 130, 130, 0.6);
+  position: absolute;
+  z-index: 0;
+  top: 0;
+}
+
+.bogang-button {
+  font-size: 16px;
+  width: 360rpx;
+  height: 75rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 33rpx;
+  background-color: #4a5c6d;
+}
+
+.icon {
+  color: #fff;
+}
+
+.liuliang {
+  color: #fff;
+  margin: 0 15rpx;
+}
+
+.color {
+  display: inline-block;
+  color: #f40;
+}
+
+.shipin-bottom {
+  height: 240rpx;
+  width: 720rpx;
+  padding-left: 30rpx;
+  background-color: #2a3c4d;
+}
+
+.title {
+  color: #fff;
+  font-size: 18px;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+.tubiao {
+  height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.size1 {
+  margin-left: 410rpx;
+}
+.size2 {
+  margin-right: 30rpx;
+}
+.shipin-bottom text {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.main-bottom {
+  padding-left: 30rpx;
+  background-color: #2a3c4d;
+}
+
+/* 专辑列表 */
+
+.zhuanji {
+  width: 720rpx;
+  background-color: #2a3c4d;
+  border-top: 2rpx solid rgba(204, 204, 204, 0.3);
+  border-bottom: 2rpx solid rgba(204, 204, 204, 0.3);
+}
+
+.zhuanji-top {
+  width: 100%;
+  height: 100rpx;
+  font-size: 18px;
+  line-height: 100rpx;
+  position: relative;
+  display: flex;
+}
+
+.zhuanji-title {
+  color: #fff;
+}
+
+.zhuanji-xq {
+  color: #ccc;
+  position: absolute;
+  right: 0;
+}
+
+.back1 {
+  display: inline-block;
+  width: 50rpx;
+  margin: 0 10rpx;
+}
+
+.zhuanji-items {
+  height: 210rpx;
+  display: flex;
+}
+
+.zhuanji-item {
+  font-size: 14px;
+  box-sizing: border-box;
+  height: 165rpx;
+  width: 320rpx;
+  padding: 20rpx;
+  margin-left: 20rpx;
+  background-color: rgba(194, 193, 193, 0.2);
+  border-radius: 10rpx;
+  color: #ccc;
+  flex-shrink: 0;
+}
+
+.wangqi {
+  width: 720rpx;
+  background-color: #2a3c4d;
+  border-bottom: 2rpx solid rgba(204, 204, 204, 0.3);
+}
+
+.wangqi-title {
+  height: 150rpx;
+  width: 100%;
+  line-height: 150rpx;
+  color: #fff;
+  font-size: 18px;
+}
+
+.wangqi-items {
+  width: 720rpx;
+}
+
+.wangqi-item {
+  display: flex;
+  width: 100%;
+  height: 200rpx;
+  margin-bottom: 20rpx;
+}
+
+.img-data {
+  width: 320rpx;
+  position: relative;
+  z-index: 0;
+  margin-right: 20rpx;
+}
+
+.wangqi-img {
+  width: 320rpx;
+  height: 178rpx;
+  border-radius: 10rpx;
+}
+
+.data {
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+  width: 150rpx;
+  background-color: rgba(194, 193, 193, 0.2);
+  position: absolute;
+  z-index: 0;
+  right: 10rpx;
+  bottom: 30rpx;
+}
+
+.title-num {
+  padding-top: 30rpx;
+  height: 180rpx;
+  width: 350rpx;
+}
+
+.title-num view {
+  color: #fff;
+}
+
+.title-num text {
+  color: #ccc;
+  font-size: 14px;
+}
+
+.all {
+  height: 100rpx;
+  width: 670rpx;
+  text-align: center;
+  line-height: 100rpx;
+  color: #fff;
+}
+
+.tuijian {
+  width: 680rpx;
+  margin-top: 20rpx;
+  border-bottom: 2rpx solid rgba(204, 204, 204, 0.3);
+}
+
+.tujian-title {
+  height: 100rpx;
+  color: #fff;
+  font-size: 18px;
+  line-height: 100rpx;
+}
+
+.tuijian-shipin {
+  width: 680rpx;
+  height: 450rpx;
+  margin: 30rpx 0;
+}
+
+.tuijian-title {
+  font-size: 16px;
+  color: #fff;
+}
+
+.img-video {
+  margin: 20rpx 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tuijian-img {
+  width: 195rpx;
+  border-radius: 10rpx;
+  flex-shrink: 0;
+  margin-right: 20rpx;
+}
+
+.shipin-video {
+  width: 480rpx;
+  border-radius: 10rpx;
+  flex-shrink: 0;
+}
+
+.tuijan-biaozhi {
+  font-size: 14px;
+  width: 680rpx;
+  height: 35rpx;
+  display: flex;
+}
+
+.pianming {
+  color: #f40;
+  margin-right: 15rpx;
+}
+
+.nixihuan {
+  width: 70%;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #aaa;
+}

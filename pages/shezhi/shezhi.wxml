@@ -1,0 +1,27 @@
+<view class="box">
+  <view class="top-box">
+    <view class="top-box1">
+      <view class="tiaoguo">
+        <view>自动跳过片头片尾</view>
+        <view class="anniu">
+          <switch checked="true" color="rgb(255, 115, 0)"></switch>
+        </view>
+      </view>
+    </view>
+    <view class="top-box2">
+      <view class="qingchu">
+        <view>清除缓存</view>
+        <view class="sudu">103kb</view>
+      </view>
+    </view>
+    <view class="top-box3">
+      <view class="yijian">
+        <view class="yijianfankui">意见反馈</view>
+        <view class="img">
+          <image src="/images/message.png"></image>
+        </view>
+
+      </view>
+    </view>
+  </view>
+</view>

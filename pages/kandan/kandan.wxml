@@ -1,0 +1,7 @@
+<view class="box">
+  <view class="tupian">
+    <image class="img" src="/images/kandan.png"></image>
+    <view class="text1">您的看单还没有添加视频</view>
+    <view class="text2">在详情页可点击加入看单按钮添加视频</view>
+  </view>
+</view>

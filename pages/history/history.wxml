@@ -1,0 +1,113 @@
+<view>
+  <view class="jintian">今天</view>
+  <view class="zhizhuxia">
+    <view class="a">
+      <image class="img1" src="https://i.gtimg.cn/qqlive/img/jpgcache/files/qqvideo/hori/9/96sxjj429lictza_big.jpg"></image>
+    </view>
+    <view class="zhizhuxia1">
+      <view class="zizhuxia2">蜘蛛侠：英雄远征</view>
+      <view class="zhizhuxia3">小蜘蛛侠开启全新旅程</view>
+      <view class="miaoshu">
+        <view>
+          <image class="miaoshu1" src="/images/c.png"></image>
+        </view>
+        <view class="zhizhuxia4">观看少于1分钟</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="shaoer">
+    <view class="a">
+      <image class="img2" src="//puui.qpic.cn/vcover_hz_pic/0/mzc00200t0ti3vs1565579136/332"></image>
+    </view>
+    <view class="shaoer1">
+      <view class="shaoer2">玛莎和熊第1季</view>
+      <view class="shaoer3">跟“熊爸爸”一起和孩子做朋友</view>
+      <view class="miaoshu">
+        <view>
+          <image class="miaoshu2" src="/images/c.png"></image>
+        </view>
+        <view class="shaoer4">观看至32分钟</view>
+      </view>
+    </view>
+  </view>
+
+
+  <view class="zongyi">
+    <view class="a">
+      <image class="img3" src="https://puui.qpic.cn/vcover_hz_pic/0/mzc00200mn8d2371567132935/332"></image>
+    </view>
+    <view class=" zongyi1 ">
+      <view class="zongyi2 ">脱口秀大会 第2季</view>
+      <view class="miaoshu">
+        <view>
+          <image class="miaoshu3" src="/images/c.png"></image>
+        </view>
+        <view class="zongyi4">剩余15分钟</view>
+      </view>
+    </view>
+  </view>
+
+
+  <view class="jilupian ">
+    <view class="a ">
+      <image class="img4 " src="https://puui.qpic.cn/vcover_vt_pic/0/9ryv0hiwni3r1ck1555486358/220 "></image>
+    </view>
+    <view class="jilupian1 ">
+      <view class="jilupian2 ">早餐中国 第一季</view>
+      <view class="jilupian3 ">巴适！搓完麻将吃抄手</view>
+      <view class="miaoshu">
+        <view>
+          <image class="miaoshu4" src="/images/c.png"></image>
+        </view>
+        <view class="jilupian4">观看至25分钟</view>
+      </view>
+    </view>
+  </view>
+
+
+  <view class="dianshiju ">
+    <view class="a ">
+      <image class="img5 " src="https://i.gtimg.cn/qqlive/img/jpgcache/files/qqvideo/m/mzc002000ngfkyj_y.jpg "></image>
+    </view>
+    <view class="dianshiju1 ">
+      <view class="dianshiju2 ">平行世界</view>
+      <view class="dianshiju3 ">小水恋上撕漫男</view>
+      <view class="miaoshu">
+        <view>
+          <image class="miaoshu5" src="/images/c.png"></image>
+        </view>
+        <view class="dianshiju4">观看至50分钟</view>
+      </view>
+    </view>
+  </view>
+
+
+  <view class="dongman ">
+    <view class="a ">
+      <image class="img6 " src="https://i.gtimg.cn/qqlive/img/jpgcache/files/qqvideo/0/0gsf9fytppje54d_y.jpg "></image>
+    </view>
+    <view class="dongman1 ">
+      <view class="dongman2 ">西行记</view>
+      <view class="dongman3 ">热血西行，披荆斩棘</view>
+      <view class="miaoshu">
+        <view>
+          <image class="miaoshu6" src="/images/c.png"></image>
+        </view>
+        <view class="dongman4">剩余5分钟</view>
+      </view>
+    </view>
+  </view>
+
+
+
+
+
+
+
+
+
+
+
+
+</view>

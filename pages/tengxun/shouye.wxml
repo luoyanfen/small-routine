@@ -1,0 +1,463 @@
+<!--pages/tengxun/shouye.wxml-->
+<view>
+  <view class="top">
+    <view class="top-top">腾讯视频</view>
+    <!-- 滚动条 -->
+    <view class="top-bottom">
+      <view class="shouye-type">
+        <scroll-view class="type-shouye" scroll-x="true" enable-flex="true">
+          <block wx:for="{{scroll_item1}}">
+            <view class="type-box {{active==index?'active':''}}" bindtap="targetChange" data-index="{{index}}">
+              <text>{{item}}</text>
+            </view>
+          </block>
+        </scroll-view>
+        <navigator url="/pages/sousuo/sousuo">
+          <view class="{{sousuo_one==1?'sousuo1':'img-flase'}}">
+            <image src="/images/搜索.png" class="{{sousuo_img==1?'sousuo-img':'img-flase'}}"></image>
+          </view>
+        </navigator>
+      </view>
+    </view>
+    <!-- 监听隐藏的搜索条 -->
+    <navigator url="/pages/sousuo/sousuo">
+      <view class="{{sousuo_two==1?'sousuo2':'img-flase'}}">
+        <image src="/images/sousuo2.png" class="{{sousuo_img2==1?'sousuo-img2':'img-flase'}}"></image>
+      </view>
+    </navigator>
+
+  </view>
+
+  <!-- 滚动条hidden设计 -->
+  <view hidden="{{active!==0}}">
+    <!-- 精选 -->
+    <view class="hidder"></view>
+    <!-- 轮播图 -->
+    <swiper class="main-lunbo" autoplay="true" circular="true">
+      <block wx:for="{{swiper_item}}">
+        <swiper-item>
+          <view class="lunbo-item">
+            <navigator url="/pages/bofang/bofang" open-type="navigateTo">
+              <view class="lunbo-top">
+                <image mode="widthFix" src="{{item.lunbo_img}}" class="lunbo-img"></image>
+                <view class="vip">
+                  <i class="iconfont icon-sanjiaoxing vip-img"></i>
+                  <text>{{item.vip}}</text>
+                </view>
+                <view class="news">{{item.news}}</view>
+              </view>
+            </navigator>
+            <view class="swiper-title">{{item.title}}</view>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+
+
+    <!-- 主体 -->
+    <view class="main">
+      <view class="caini-type1">
+        <view class="type-title">猜你在追</view>
+        <scroll-view class="type1-items" scroll-x="true" enable-flex="true">
+          <block wx:for="{{type1_items}}">
+            <view class="type1-item">
+              <view class="type1-tupian">
+                <image mode="widthFix" src="{{item.type1_img}}" class="type1-img"></image>
+                <view class="type1-data">{{item.type1_data}}</view>
+              </view>
+              <view class="type1-juming">{{item.type1_juming}}</view>
+              <text>{{item.type1_main}}</text>
+            </view>
+          </block>
+        </scroll-view>
+      </view>
+
+      <view class="caini-type2">
+        <view class="type2-title">猜你喜欢</view>
+        <view class="type2-items">
+          <block wx:for="{{type2_items}}">
+            <view class="type2-item">
+              <view class="item-img">
+                <image mode="widthFix" src="{{item.type2_img}}" class="type2-img"></image>
+                <view class="type2-jishu">{{item.type2_jishu}}</view>
+              </view>
+              <view class="type2-juming">{{item.type2_juming}}</view>
+              <view class="type2-miaoshu">
+                <text>{{item.type2_main}}</text>
+              </view>
+            </view>
+          </block>
+        </view>
+      </view>
+
+      <view class="shipins">
+        <block wx:for="{{shipin_item}}">
+          <view class="shipin">
+            <view class="shipin-title">{{item.shipin_title}}</view>
+            <view class="img-video">
+              <image mode="widthFix" src="{{item.shipin_img}}" class="shipin-img"></image>
+              <image mode="widthFix" src="{{item.shipin_video}}" class="shipin-video"></image>
+            </view>
+            <view class="biaozhi">
+              <view class="pianming">{{item.pianming}}</view>
+              <view class="nixihuan">{{item.nixihuan}}</view>
+            </view>
+          </view>
+        </block>
+      </view>
+    </view>
+
+  </view>
+
+  <view hidden="{{active!==1}}">
+    <!-- 电视剧 -->
+    <view class="hidder"></view>
+    <!-- 轮播图 -->
+    <swiper class="main-lunbo" autoplay="true" circular="true">
+      <block wx:for="{{swiper_dianshiju}}">
+        <swiper-item>
+          <view class="lunbo-item">
+            <navigator url="/pages/bofang/bofang" open-type="navigateTo">
+              <view class="lunbo-top">
+                <image mode="widthFix" src="{{item.lunbo_img}}" class="lunbo-img"></image>
+                <view class="vip">
+                  <i class="iconfont icon-sanjiaoxing vip-img"></i>
+                  <text>{{item.vip}}</text>
+                </view>
+                <view class="news">{{item.news}}</view>
+              </view>
+            </navigator>
+            <view class="swiper-title">{{item.title}}</view>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+
+
+    <!-- 主体 -->
+    <view class="main">
+      <view class="caini-type2">
+        <view class="type2-title">猜你喜欢</view>
+        <view class="type2-items">
+          <block wx:for="{{type2_items}}">
+            <view class="type2-item">
+              <view class="item-img">
+                <image mode="widthFix" src="{{item.type2_img}}" class="type2-img"></image>
+                <view class="type2-jishu">{{item.type2_jishu}}</view>
+              </view>
+              <view class="type2-juming">{{item.type2_juming}}</view>
+              <view class="type2-miaoshu">
+                <text>{{item.type2_main}}</text>
+              </view>
+            </view>
+          </block>
+        </view>
+      </view>
+
+      <view class="shipins">
+        <block wx:for="{{shipin_item}}">
+          <view class="shipin">
+            <view class="shipin-title">{{item.shipin_title}}</view>
+            <view class="img-video">
+              <image mode="widthFix" src="{{item.shipin_img}}" class="shipin-img"></image>
+              <image mode="widthFix" src="{{item.shipin_video}}" class="shipin-video"></image>
+            </view>
+            <view class="biaozhi">
+              <view class="pianming">{{item.pianming}}</view>
+              <view class="nixihuan">{{item.nixihuan}}</view>
+            </view>
+          </view>
+        </block>
+      </view>
+    </view>
+
+  </view>
+
+  <view hidden="{{active!==2}}">
+    <!-- 综艺 -->
+    <view class="hidder"></view>
+    <!-- 轮播图 -->
+    <swiper class="main-lunbo" autoplay="true" circular="true">
+      <block wx:for="{{swiper_zongyi}}">
+        <swiper-item>
+          <view class="lunbo-item">
+            <navigator url="/pages/bofang/bofang" open-type="navigateTo">
+              <view class="lunbo-top">
+                <image mode="widthFix" src="{{item.lunbo_img}}" class="lunbo-img"></image>
+                <view class="vip">
+                  <i class="iconfont icon-sanjiaoxing vip-img"></i>
+                  <text>{{item.vip}}</text>
+                </view>
+                <view class="news">{{item.news}}</view>
+              </view>
+            </navigator>
+            <view class="swiper-title">{{item.title}}</view>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+
+    <!-- 主体 -->
+    <view class="main">
+      <view class="caini-type1">
+        <view class="type-title">猜你在追</view>
+        <scroll-view class="type1-items" scroll-x="true" enable-flex="true">
+          <block wx:for="{{type1_items}}">
+            <view class="type1-item">
+              <view class="type1-tupian">
+                <image mode="widthFix" src="{{item.type1_img}}" class="type1-img"></image>
+                <view class="type1-data">{{item.type1_data}}</view>
+              </view>
+              <view class="type1-juming">{{item.type1_juming}}</view>
+              <text>{{item.type1_main}}</text>
+            </view>
+          </block>
+        </scroll-view>
+      </view>
+
+      <view class="caini-type2">
+        <view class="type2-title">猜你喜欢</view>
+        <view class="type2-items">
+          <block wx:for="{{type2_items}}">
+            <view class="type2-item">
+              <view class="item-img">
+                <image mode="widthFix" src="{{item.type2_img}}" class="type2-img"></image>
+                <view class="type2-jishu">{{item.type2_jishu}}</view>
+              </view>
+              <view class="type2-juming">{{item.type2_juming}}</view>
+              <view class="type2-miaoshu">
+                <text>{{item.type2_main}}</text>
+              </view>
+            </view>
+          </block>
+        </view>
+      </view>
+
+      <view class="shipins">
+        <block wx:for="{{shipin_item}}">
+          <view class="shipin">
+            <view class="shipin-title">{{item.shipin_title}}</view>
+            <view class="img-video">
+              <image mode="widthFix" src="{{item.shipin_img}}" class="shipin-img"></image>
+              <image mode="widthFix" src="{{item.shipin_video}}" class="shipin-video"></image>
+            </view>
+            <view class="biaozhi">
+              <view class="pianming">{{item.pianming}}</view>
+              <view class="nixihuan">{{item.nixihuan}}</view>
+            </view>
+          </view>
+        </block>
+      </view>
+    </view>
+
+  </view>
+
+  <view hidden="{{active!==3}}">
+    <!-- 电影 -->
+    <view class="hidder"></view>
+    <!-- 轮播图 -->
+    <swiper class="main-lunbo" autoplay="true" circular="true">
+      <block wx:for="{{swiper_dianying}}">
+        <swiper-item>
+          <view class="lunbo-item">
+            <navigator url="/pages/bofang/bofang" open-type="navigateTo">
+              <view class="lunbo-top">
+                <image mode="widthFix" src="{{item.lunbo_img}}" class="lunbo-img"></image>
+                <view class="vip">
+                  <i class="iconfont icon-sanjiaoxing vip-img"></i>
+                  <text>{{item.vip}}</text>
+                </view>
+                <view class="news">{{item.news}}</view>
+              </view>
+            </navigator>
+            <view class="swiper-title">{{item.title}}</view>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+
+
+    <!-- 主体 -->
+    <view class="main">
+      <view class="caini-type2">
+        <view class="type2-title">猜你喜欢</view>
+        <view class="type2-items">
+          <block wx:for="{{type2_items}}">
+            <view class="type2-item">
+              <view class="item-img">
+                <image mode="widthFix" src="{{item.type2_img}}" class="type2-img"></image>
+                <view class="type2-jishu">{{item.type2_jishu}}</view>
+              </view>
+              <view class="type2-juming">{{item.type2_juming}}</view>
+              <view class="type2-miaoshu">
+                <text>{{item.type2_main}}</text>
+              </view>
+            </view>
+          </block>
+        </view>
+      </view>
+
+      <view class="shipins">
+        <block wx:for="{{shipin_item}}">
+          <view class="shipin">
+            <view class="shipin-title">{{item.shipin_title}}</view>
+            <view class="img-video">
+              <image mode="widthFix" src="{{item.shipin_img}}" class="shipin-img"></image>
+              <image mode="widthFix" src="{{item.shipin_video}}" class="shipin-video"></image>
+            </view>
+            <view class="biaozhi">
+              <view class="pianming">{{item.pianming}}</view>
+              <view class="nixihuan">{{item.nixihuan}}</view>
+            </view>
+          </view>
+        </block>
+      </view>
+    </view>
+
+  </view>
+
+  <view hidden="{{active!==4}}">
+    <!-- 动漫 -->
+    <view class="hidder"></view>
+    <!-- 轮播图 -->
+    <swiper class="main-lunbo" autoplay="true" circular="true">
+      <block wx:for="{{swiper_dongman}}">
+        <swiper-item>
+          <view class="lunbo-item">
+            <navigator url="/pages/bofang/bofang" open-type="navigateTo">
+              <view class="lunbo-top">
+                <image mode="widthFix" src="{{item.lunbo_img}}" class="lunbo-img"></image>
+                <view class="vip">
+                  <i class="iconfont icon-sanjiaoxing vip-img"></i>
+                  <text>{{item.vip}}</text>
+                </view>
+                <view class="news">{{item.news}}</view>
+              </view>
+            </navigator>
+            <view class="swiper-title">{{item.title}}</view>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+
+
+    <!-- 主体 -->
+    <view class="main">
+      <view class="caini-type1">
+        <view class="type-title">猜你在追</view>
+        <scroll-view class="type1-items" scroll-x="true" enable-flex="true">
+          <block wx:for="{{type1_items}}">
+            <view class="type1-item">
+              <view class="type1-tupian">
+                <image mode="widthFix" src="{{item.type1_img}}" class="type1-img"></image>
+                <view class="type1-data">{{item.type1_data}}</view>
+              </view>
+              <view class="type1-juming">{{item.type1_juming}}</view>
+              <text>{{item.type1_main}}</text>
+            </view>
+          </block>
+        </scroll-view>
+      </view>
+
+      <view class="caini-type2">
+        <view class="type2-title">猜你喜欢</view>
+        <view class="type2-items">
+          <block wx:for="{{type2_items}}">
+            <view class="type2-item">
+              <view class="item-img">
+                <image mode="widthFix" src="{{item.type2_img}}" class="type2-img"></image>
+                <view class="type2-jishu">{{item.type2_jishu}}</view>
+              </view>
+              <view class="type2-juming">{{item.type2_juming}}</view>
+              <view class="type2-miaoshu">
+                <text>{{item.type2_main}}</text>
+              </view>
+            </view>
+          </block>
+        </view>
+      </view>
+
+      <view class="shipins">
+        <block wx:for="{{shipin_item}}">
+          <view class="shipin">
+            <view class="shipin-title">{{item.shipin_title}}</view>
+            <view class="img-video">
+              <image mode="widthFix" src="{{item.shipin_img}}" class="shipin-img"></image>
+              <image mode="widthFix" src="{{item.shipin_video}}" class="shipin-video"></image>
+            </view>
+            <view class="biaozhi">
+              <view class="pianming">{{item.pianming}}</view>
+              <view class="nixihuan">{{item.nixihuan}}</view>
+            </view>
+          </view>
+        </block>
+      </view>
+    </view>
+
+  </view>
+
+  <view hidden="{{active!==5}}">
+    <!-- 少儿 -->
+    <view class="hidder"></view>
+    <!-- 轮播图 -->
+    <swiper class="main-lunbo" autoplay="true" circular="true">
+      <block wx:for="{{swiper_shaoer}}">
+        <swiper-item>
+          <view class="lunbo-item">
+            <navigator url="/pages/bofang/bofang" open-type="navigateTo">
+              <view class="lunbo-top">
+                <image mode="widthFix" src="{{item.lunbo_img}}" class="lunbo-img"></image>
+                <view class="vip">
+                  <i class="iconfont icon-sanjiaoxing vip-img"></i>
+                  <text>{{item.vip}}</text>
+                </view>
+                <view class="news">{{item.news}}</view>
+              </view>
+            </navigator>
+            <view class="swiper-title">{{item.title}}</view>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+
+
+    <!-- 主体 -->
+    <view class="main">
+      <view class="caini-type2">
+        <view class="type2-title">猜你喜欢</view>
+        <view class="type2-items">
+          <block wx:for="{{type2_items}}">
+            <view class="type2-item">
+              <view class="item-img">
+                <image mode="widthFix" src="{{item.type2_img}}" class="type2-img"></image>
+                <view class="type2-jishu">{{item.type2_jishu}}</view>
+              </view>
+              <view class="type2-juming">{{item.type2_juming}}</view>
+              <view class="type2-miaoshu">
+                <text>{{item.type2_main}}</text>
+              </view>
+            </view>
+          </block>
+        </view>
+      </view>
+
+      <view class="shipins">
+        <block wx:for="{{shipin_item}}">
+          <view class="shipin">
+            <view class="shipin-title">{{item.shipin_title}}</view>
+            <view class="img-video">
+              <image mode="widthFix" src="{{item.shipin_img}}" class="shipin-img"></image>
+              <image mode="widthFix" src="{{item.shipin_video}}" class="shipin-video"></image>
+            </view>
+            <view class="biaozhi">
+              <view class="pianming">{{item.pianming}}</view>
+              <view class="nixihuan">{{item.nixihuan}}</view>
+            </view>
+          </view>
+        </block>
+      </view>
+    </view>
+
+  </view>
+
+</view>

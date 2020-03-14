@@ -1,0 +1,121 @@
+<!--pages/dsp/dsp.wxml-->
+<view class="dsp">
+  <!-- 头部滑动效果 -->
+  <view class="tou">
+    <block wx:if="{{show==1}}">
+      <view class="top-container">
+        <scroll-view class="scroll" enable-flex="ture" scroll-x>
+          <block wx:for="{{array}}">
+            <view class="{{active==index?'active':''}}" bindtap="activefun" data-index="{{index}}">{{item}} </view>
+          </block>
+        </scroll-view>
+      </view>
+    </block>
+
+  </view>
+  <!-- 身体部分 -->
+  <view class="video-bigbox">
+    <view hidden="{{active!==0}}">
+      <block wx:for="{{video_item}}">
+        <view class="video-items">
+          <view class="picture-word">
+            <view class="picture-box">
+              <image class="video-img" src="{{item.img}}"></image>
+
+              <view class="buttom">
+                <view class="buttom-ming">
+                  <view class="yu">{{item.video_title1}}</view>
+                  <view class="kun">{{item.video_title2}}</view>
+                  <view class="zhou">{{item.video_title3}}</view>
+                </view>
+
+                <view class="buttom-images">
+                  <view>
+                    <image class="images1" src="/images/1.png"></image>
+                  </view>
+                  <view>
+                    <image class="images2" src="/images/2.png"></image>
+                  </view>
+                </view>
+              </view>
+              <view class="word">{{item.word}}</view>
+              <view class="play">
+                <image class="play-video" src="/images/3.png"></image>
+              </view>
+
+            </view>
+
+          </view>
+        </view>
+      </block>
+    </view>
+    <view hidden="{{active!==1}}">
+      <block wx:for="{{video_item1}}">
+        <view class="video-items">
+          <view class="picture-word">
+            <view class="picture-box">
+              <image class="video-img" src="{{item.img}}"></image>
+
+              <view class="buttom">
+                <view class="buttom-ming">
+                  <view class="yu">{{item.video_title1}}</view>
+                  <view class="kun">{{item.video_title2}}</view>
+                  <view class="zhou">{{item.video_title3}}</view>
+                </view>
+
+                <view class="buttom-images">
+                  <view>
+                    <image class="images1" src="../images/1.png"></image>
+                  </view>
+                  <view>
+                    <image class="images2" src="../images/2.png"></image>
+                  </view>
+                </view>
+              </view>
+              <view class="word">{{item.word}}</view>
+              <view class="play">
+                <image class="play-video" src="../images/3.png"></image>
+              </view>
+
+            </view>
+
+          </view>
+        </view>
+      </block>
+    </view>
+     <view hidden="{{active!==2}}">
+      <block wx:for="{{video_item3}}">
+        <view class="video-items">
+          <view class="picture-word">
+            <view class="picture-box">
+              <image class="video-img" src="{{item.img}}"></image>
+
+              <view class="buttom">
+                <view class="buttom-ming">
+                  <view class="yu">{{item.video_title1}}</view>
+                  <view class="kun">{{item.video_title2}}</view>
+                  <view class="zhou">{{item.video_title3}}</view>
+                </view>
+
+                <view class="buttom-images">
+                  <view>
+                    <image class="images1" src="../images/1.png"></image>
+                  </view>
+                  <view>
+                    <image class="images2" src="../images/2.png"></image>
+                  </view>
+                </view>
+              </view>
+              <view class="word">{{item.word}}</view>
+              <view class="play">
+                <image class="play-video" src="../images/3.png"></image>
+              </view>
+
+            </view>
+
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

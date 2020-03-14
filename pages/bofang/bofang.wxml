@@ -1,0 +1,95 @@
+<!--pages/bofang/bofang.wxml-->
+<view>
+  <view class="top">
+    <view class="top-top">
+      <navigator url="../tengxun/shouye" open-type="navigateBack">
+        <text decode="true" class="back">&lt;</text>
+      </navigator>
+      <view>腾讯视频</view>
+    </view>
+  </view>
+  <!-- 主体 -->
+  <view class="shipin">
+    <view class="shipin-bofang">
+      <view class="bofang-top">
+        <image mode="widthFix" src="http://puui.qpic.cn/tv/0/271796858_1080607/0" class="tu"></image>
+        <view class="bofang">
+          <view class="bogang-button">
+            <view class="iconfont icon-sanjiaoxing icon"></view>
+            <text class="liuliang">使用流量播放</text>
+            <text class="color">30M</text>
+          </view>
+        </view>
+      </view>
+      <view class="shipin-bottom">
+        <view class="title">世界杯决赛：阿根廷75-95西班牙</view>
+        <text>2928.1万</text>
+        <view class="tubiao">
+          <i class="iconfont icon-xiaoxi size"></i>
+          <i class="iconfont icon-fenxiang size size1"></i>
+          <i class="iconfont icon-woxihuande size size2"></i>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="main-bottom">
+    <view class="zhuanji">
+      <view class="zhuanji-top">
+        <view class="zhuanji-title">专辑列表</view>
+        <view class="zhuanji-xq">
+          <text>79</text>
+          <navigator url="../tengxun/shouye" open-type="navigateBack" class="back1">
+            <text decode="true">&gt;</text>
+          </navigator>
+        </view>
+      </view>
+      <scroll-view class="zhuanji-items" scroll-x="true" enable-flex="true">
+        <view class="zhuanji-item">【集锦】阿根廷75-95西班牙 西班牙8战全胜时刻时隔13年再...</view>
+        <view class="zhuanji-item">【集锦】阿根廷75-95西班牙 西班牙8战全胜时刻时隔13年再...</view>
+        <view class="zhuanji-item">【集锦】阿根廷75-95西班牙 西班牙8战全胜时刻时隔13年再...</view>
+        <view class="zhuanji-item">【集锦】阿根廷75-95西班牙 西班牙8战全胜时刻时隔13年再...</view>
+      </scroll-view>
+
+    </view>
+
+
+    <view class="wangqi">
+      <view class="wangqi-title">往期节目</view>
+      <view class="wangqi-items">
+       <block wx:for = "{{wangqi_items}}"> 
+               <view class="wangqi-item">
+          <view class="img-data">
+            <image mode="widthFix" src="{{item.wangqi_img}}" class="wangqi-img"></image>
+            <view class="data">{{item.data}}</view>
+          </view>
+          <view class="title-num">
+            <view>{{item.wangqi_title}}</view>
+            <text>{{item.wangqi_cishu}}</text>
+          </view>
+        </view>
+       </block>
+        <view class="all">全部</view>
+      </view>
+    </view>
+
+
+    <view class="tuijian">
+      <view class="tujian-title">为你推荐</view>
+      <block wx:for="{{shipin_item}}">
+        <view class="tuijian-shipin">
+          <view class="tuijian-title">{{item.shipin_title}}</view>
+          <view class="img-video">
+            <image mode="widthFix" src="{{item.shipin_img}}" class="tuijian-img"></image>
+            <image mode="widthFix" src="{{item.shipin_video}}" class="shipin-video"></image>
+          </view>
+          <view class="tuijan-biaozhi">
+            <view class="pianming">{{item.pianming}}</view>
+            <view class="nixihuan">{{item.nixihuan}}</view>
+          </view>
+        </view>
+      </block>
+      <view class="all">全部</view>
+    </view>
+  </view>
+</view>

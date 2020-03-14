@@ -1,0 +1,161 @@
+/* pages/sousuo/sousuo.wxss */
+
+@font-face {
+  font-family: "iconfont";
+  src: url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAK8AAsAAAAABmwAAAJwAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCCcAp4gRcBNgIkAwgLBgAEIAWEbQcwG70FyB6SJIFQBRQA9gkIBIiH79d+5+6+74gn1cSQ8SyayOYlkaBlL5kqXgJTc/pNhnT+fctyyKqI+09S+gbH4IgkoRKbIxAOULcOZv+4d9oECmQ+oJzmWvSpCzDeGtBYmyIroYwbxm4ieIDHCVR101AttXZbQY4EjAvEMceEQE7BKUlOpCwUG5YmcQsKytk1dYUb/v34MxU5ZAo5kLO629ID6j/VMIYeS4/ZoSjgIhirC8gxCUjEZmNwGS0cAq0azNAPHCsz+FSn01QtjqoQzl8H0utAp858JhZmP2p6BpLe3geYmXQLqVhfH2cLGxU2tfvmxnp3Z7+/d9ze2sI5OqPr9PJU1eV3vN69fFZ4avrocJTYMnZPVSZx8PhwhOp6dEQN6NIJanGJSkL94nJCV6wsZyUrS0kKmAN+lu9TTwLBf3E3DhRX/5drCbzsCHJ5MsxMef+m4D+xBpalmAMk2QWZhinTl7PL0OmuxT8A1hZvU6XtNxUNZe23Zi7pyiBXNohO+EkoqJmGorJZqJrQtrqmlYAWqYJx0xqEJheQafAMuSbX6IR/hYIO71DUFDRUbUf5ljXDweU1CSgkoR4Y7odchCQx0kh5ItOMGDkeEvIcTrQjQeQ80KgzlCNtKImEJWaICmOSJAyxQBKwVTsNxeMEpgQSRRFJx0pSqlKvx01v0kVIAuRZJEBCJEgPKKwfxIkgkjCtLsmrfN4MYcjiQoQOxIjWDhGIuM4hIx3DAHSbMDkI8SiviBQME4kEgzABkQC1aoOQuDgCSjUPikIiJDrsBH9KJT2shIcKdduLE3+3BqqALAvYL1e8IrIoEwAAAA==') format('woff2');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 20px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 16rpx;
+}
+
+.icon-sousuo:before {
+  content: "\e62b";
+}
+
+/* 搜索框滑動效果 */
+
+.header-search {
+  height: 98rpx;
+  background-color: #fff;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 20rpx;
+  border-bottom: 1px solid #b2b2b8;
+}
+
+.search {
+  background-color: #f6f6f7;
+  width: 610rpx;
+  height: 58rpx;
+  border-radius: 10rpx;
+  text-align: left;
+  line-height: 58rpx;
+  color: rgb(167, 164, 164);
+  font-size: 14px;
+}
+
+.cancel {
+  font-size: 14px;
+  color: #ff7000;
+  padding-left: 28rpx;
+}
+
+/* 导航栏 滑动效果css*/
+
+.top-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+}
+
+.scroll {
+  width: 680rpx;
+  height: 70rpx;
+  display: flex;
+}
+/* 没单击时的效果 */
+.scroll view {
+  font-size: 12px;
+  height: 46rpx;
+  line-height: 45rpx;
+  color: #333;
+  flex-shrink: 0;
+  margin-right: 50rpx;
+}
+/* 导航栏第一个和最后一个与边的距离 */
+.scroll view:first-child {
+  margin-left: 10rpx;
+}
+
+.scroll view:last-child {
+  margin-right: 20rpx;
+}
+
+.scroll .active {
+  border-bottom: 4rpx solid rgb(237, 91, 0);
+  color: rgb(237, 91, 0);
+}
+
+/* 热搜模块 */
+/* 头部大盒子 */
+.top {
+top:0;
+position: fixed;
+}
+/* 主体部分距离顶部的距离 */
+.mian-body{
+margin-top: 158rpx;
+
+}
+/* 文字主体距离盒子顶部的距离 */
+.body {
+  margin-top: 10rpx;
+}
+/* 排名以及主体部分文字的css */
+/* align-items 盒子垂直居中 */
+
+.body-content {
+  background-color:#FFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  border-bottom: 1px solid #eaeaf8;
+}
+
+.body-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 热搜4以后的css */
+
+.number {
+  background-color: #c8cac5;
+  color: #000;
+  height: 30rpx;
+  width: 30rpx;
+  border-radius: 8rpx;
+  text-align: center;
+  margin: 24rpx;
+}
+
+/* 热搜前三的css */
+
+.number1 {
+  background-color: red;
+  color: white;
+  height: 30rpx;
+  width: 30rpx;
+  border-radius: 8rpx;
+  text-align: center;
+  margin: 24rpx;
+}
+
+.number2 {
+  background-color: #ff7000;
+  color: white;
+  height: 30rpx;
+  width: 30rpx;
+  border-radius: 8rpx;
+  text-align: center;
+  margin: 24rpx;
+}
+
+.number3 {
+  background-color: #eb0f3f86;
+  color: white;
+  height: 30rpx;
+  width: 30rpx;
+  border-radius: 8rpx;
+  text-align: center;
+  margin: 24rpx;
+}

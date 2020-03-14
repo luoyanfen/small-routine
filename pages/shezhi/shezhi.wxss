@@ -1,0 +1,63 @@
+.box{
+  width: 100%;
+  height: 1500rpx;
+  background-color: rgb(250, 249, 249);
+}
+.top-box{
+  line-height: 150rpx;
+}
+.top-box1{
+  width: 100%;
+  height: 150rpx;
+  background-color: #fff;
+  border-top: solid rgb(250, 249, 249) 16px;
+  border-bottom: solid rgb(250, 249, 249) 8px;
+}
+.top-box2{
+  width: 100%;
+  height:150rpx;
+  background-color: #fff;
+  border-top: solid rgb(250, 249, 249) 8px;
+  border-bottom: solid rgb(250, 249, 249) 8px;
+}
+.qingchu{
+  display: flex;
+  justify-content: space-between;
+}
+.sudu{
+  margin-right: 30rpx;
+  color: rgb(187, 183, 183);
+}
+.top-box3{
+  width: 100%;
+  height:150rpx;
+  background-color: #fff;
+  border-top: solid rgb(250, 249, 249) 8px;
+  border-bottom: solid rgb(250, 249, 249) 16px;
+}
+.tiaoguo{
+  margin-left: 30rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.anniu{
+  margin-right: 30rpx;
+  color: rgb(255, 115, 0);
+}
+.qingchu{
+   margin-left: 30rpx;
+}
+.yijian{
+   margin-left: 30rpx;
+   display: flex;
+   justify-content: space-between;
+}
+.img{
+  width: 97rpx;
+  height: 97rpx;
+  margin: 20rpx 30rpx 0 0;
+}
+.img image{
+  width: 90rpx;
+  height: 90rpx;
+}

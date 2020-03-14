@@ -1,0 +1,142 @@
+<!--pages/vip/vip.wxml-->
+<view class="box">
+  <view class="box-top">
+    <image src="../../images/touxiang.png"></image>
+    <view class="text">
+      <view>你好</view>
+      <view class="text2">您还不是腾讯视频VIP</view>
+    </view>
+  </view>
+  <view class="box-center">
+    <view class="box-vip">
+      <span>VIP套餐</span>
+      <text>服务协议></text>
+    </view>
+    <view class="vip1">
+      <span>3个月
+        <text>58</text>元
+        <span>90元</span>
+      </span>
+      <view class="kaitong">开通</view>
+    </view>
+    <view class="vip1">
+      <span>6个月
+        <text>108</text>元
+        <span>180元</span>
+      </span>
+      <view class="kaitong">开通</view>
+    </view>
+    <view class="vip1">
+      <span>年费
+        <text>198</text>元
+        <span>360元</span>
+      </span>
+      <view class="chaozhi">超值</view>
+      <view class="kaitong">开通</view>
+    </view>
+    <view class="vip2">
+      <span>1个月
+        <text>20</text>元
+        <span>30元</span>
+      </span>
+      <view class="kaitong">开通</view>
+    </view>
+  </view>
+  <view class="box-center2">
+
+
+   <navigator url="/pages/more/more">
+    <view class="box-center2-top">
+      <span>VIP大片</span>
+      <text>更多></text>
+    </view>
+    </navigator>
+    
+    <view class="video">
+      <view class="img">
+        <image src="http://puui.qpic.cn/vcover_vt_pic/0/mzc0020022o8qha1566183173/220"></image>
+        <view>陆战之王</view>
+      </view>
+      <view class="img">
+        <image src="http://puui.qpic.cn/vcover_vt_pic/0/m441e3rjq9kwpsc1531129675/220"></image>
+        <view>斗罗大陆</view>
+      </view>
+      <view class="img">
+        <image src="http://puui.qpic.cn/vcover_vt_pic/0/mzc0020025uh2wp1566788360/220"></image>
+        <view>老酒馆</view>
+      </view>
+    </view>
+
+
+    <view class="bottom">
+      <view class="b">
+        <view class="bottom-text">VIP特权</view>
+        <scroll-view class="box-bottom" scroll-x>
+          <view class="tequan">
+            <view class="tequan1">
+              <image src="https://puui.qpic.cn/vupload/0/20180802_hcs3huo3pfi/0"></image>
+              <view class="tequan2">1080P</view>
+            </view>
+            <view class="tequan1">
+              <image src="https://puui.qpic.cn/vupload/0/20181221_vru23f4m80d/0"></image>
+              <view class="tequan2">线下活动</view>
+            </view>
+            <view class="tequan1">
+              <image src="https://puui.qpic.cn/vupload/0/20180802_86r152ithld/0"></image>
+              <view class="tequan2">广告特权</view>
+            </view>
+            <view class="tequan1">
+              <image src="https://puui.qpic.cn/vupload/0/20180802_nhjbcbgf22c/0"></image>
+              <view class="tequan2">生日礼包</view>
+            </view>
+            <view class="tequan1">
+              <image src="https://puui.qpic.cn/vupload/0/20180802_edbt41mwzfv/0"></image>
+              <view class="tequan2">漫画特权</view>
+            </view>
+            <view class="tequan1">
+              <image src="https://puui.qpic.cn/vupload/0/20190904_t632g6el5i/0"></image>
+              <view class="tequan2">话费福利</view>
+            </view>
+            <view class="tequan1">
+              <image src="https://puui.qpic.cn/vupload/0/20190527_b7tvudpe4xm/0"></image>
+              <view class="tequan2">折扣享大屏</view>
+            </view>
+          </view>
+          <view class="tequan3">
+            <view class="tequan1">
+              <image src="https://puui.qpic.cn/vupload/0/20180802_0mv9htydljq/0"></image>
+              <view class="tequan2">杜比视听</view>
+            </view>
+            <view class="tequan1">
+              <image src="https://puui.qpic.cn/vupload/0/20180802_1k8wtkquc0k/0"></image>
+              <view class="tequan2">边下边播</view>
+            </view>
+            <view class="tequan1">
+              <image src="https://puui.qpic.cn/vupload/0/20180802_08sirfjtanz3/0"></image>
+              <view class="tequan2">每月优惠券</view>
+            </view>
+            <view class="tequan1">
+              <image src="https://puui.qpic.cn/vupload/0/20190426_mfjq0v9hhq/0"></image>
+              <view class="tequan2">首席体验官</view>
+            </view>
+            <view class="tequan1">
+              <image src="https://puui.qpic.cn/vupload/0/20181221_l89s122apil/0"></image>
+              <view class="tequan2">升级礼包</view>
+            </view>
+            <view class="tequan1">
+              <image src="https://puui.qpic.cn/vupload/0/20180802_5hg1ahyonir/0"></image>
+              <view class="tequan2">全球纪录片</view>
+            </view>
+            <view class="tequan1">
+              <image src="https://puui.qpic.cn/vupload/0/20181221_jq8khelg6z/0"></image>
+              <view class="tequan2">成长加速</view>
+            </view>
+          </view>
+        </scroll-view>
+      </view>
+    </view>
+
+
+    
+  </view>
+</view>

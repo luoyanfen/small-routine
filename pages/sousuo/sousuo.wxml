@@ -1,0 +1,188 @@
+<!--pages/sousuo/sousuo.wxml-->
+<!-- 头部 -->
+<view class="index">
+  <view class="top">
+    <view class="header-search">
+      <view class="search">
+        <text class="iconfont icon-sousuo"></text>
+        <text>请输入片名、主演或导演</text>
+      </view>
+      <navigator url="/pages/tengxun/shouye" open-type="navigateBack">
+        <view class="cancel">取消</view>
+      </navigator>
+    </view>
+    <!-- 滑动效果 -->
+    <block wx:if="{{show==1}}">
+      <view class="top-container">
+        <scroll-view class="scroll" enable-flex="ture" scroll-x>
+          <block wx:for="{{array}}">
+            <view class="{{active==index?'active':''}}" bindtap="activefun" data-index="{{index}}">{{item}} </view>
+          </block>
+        </scroll-view>
+      </view>
+    </block>
+  </view>
+  <!-- 热搜排行 主体部分 -->
+  <view hidden="{{active!==0}}">
+    <view class="mian-body">
+      <view class="body">
+        <view class="body-items">
+          <view class="body-content">
+            <view class="body-number">
+              <view class="number1">1</view>
+              <text>斗罗大陆</text>
+            </view>
+            <view>-</view>
+          </view>
+        </view>
+      </view>
+      <view class="body">
+        <view class="body-items">
+          <view class="body-content">
+            <view class="body-number">
+              <view class="number2">2</view>
+              <text>西行记</text>
+            </view>
+            <view>-</view>
+          </view>
+        </view>
+      </view>
+
+      <view class="body">
+        <view class="body-items">
+          <view class="body-content">
+            <view class="body-number">
+              <view class="number3">3</view>
+              <text>斗破苍穹</text>
+            </view>
+            <view>-</view>
+          </view>
+        </view>
+      </view>
+
+      <block wx:for="{{body_item}}">
+        <view class="body">
+          <view class="body-items">
+            <view class="body-content">
+              <view class="body-number">
+                <view class="number">{{item.number}}</view>
+                <text>{{item.body_title}}</text>
+              </view>
+              <view>-</view>
+            </view>
+          </view>
+
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <view hidden="{{active!==1}}">
+    <view class="mian-body">
+      <view class="body">
+        <view class="body-items">
+          <view class="body-content">
+            <view class="body-number">
+              <view class="number1">1</view>
+              <text>老酒馆</text>
+            </view>
+            <view>-</view>
+          </view>
+        </view>
+      </view>
+      <view class="body">
+        <view class="body-items">
+          <view class="body-content">
+            <view class="body-number">
+              <view class="number2">2</view>
+              <text>陈情令</text>
+            </view>
+            <view>-</view>
+          </view>
+        </view>
+      </view>
+
+      <view class="body">
+        <view class="body-items">
+          <view class="body-content">
+            <view class="body-number">
+              <view class="number3">3</view>
+              <text>小欢喜</text>
+            </view>
+            <view>-</view>
+          </view>
+        </view>
+      </view>
+
+      <block wx:for="{{body_item}}">
+        <view class="body">
+          <view class="body-items">
+            <view class="body-content">
+              <view class="body-number">
+                <view class="number">{{item.number}}</view>
+                <text>{{item.body_title}}</text>
+              </view>
+              <view>-</view>
+            </view>
+          </view>
+
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <view hidden="{{active!==2}}">
+    <view class="mian-body">
+      <view class="body">
+        <view class="body-items">
+          <view class="body-content">
+            <view class="body-number">
+              <view class="number1">1</view>
+              <text>小猪佩琪第七季</text>
+            </view>
+            <view>-</view>
+          </view>
+        </view>
+      </view>
+      <view class="body">
+        <view class="body-items">
+          <view class="body-content">
+            <view class="body-number">
+              <view class="number2">2</view>
+              <text>汪汪队</text>
+            </view>
+            <view>-</view>
+          </view>
+        </view>
+      </view>
+
+      <view class="body">
+        <view class="body-items">
+          <view class="body-content">
+            <view class="body-number">
+              <view class="number3">3</view>
+              <text>斗破苍穹</text>
+            </view>
+            <view>-</view>
+          </view>
+        </view>
+      </view>
+
+      <block wx:for="{{body_item}}">
+        <view class="body">
+          <view class="body-items">
+            <view class="body-content">
+              <view class="body-number">
+                <view class="number">{{item.number}}</view>
+                <text>{{item.body_title}}</text>
+              </view>
+              <view>-</view>
+            </view>
+          </view>
+
+        </view>
+      </block>
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,93 @@
+<view class="box">
+  <view class="container">
+    <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <block wx:else>
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </block>
+    </view>
+    <view class="usermotto">
+      <text class="user-motto">{{motto}}</text>
+    </view>
+  </view>
+
+  <navigator url="/pages/vip/vip">
+    <view class="vip">
+
+
+    <view><image class="image" src="/images/h.png"></image></view>
+
+
+      <view class="word" >开通VIP会员</view>
+      <view class="more">></view>
+    </view>
+  </navigator>
+  <navigator url="/pages/history/history">
+    <view class="history">
+      <span>观看历史</span>
+      <span class="more">></span>
+    </view>
+  </navigator>
+
+
+
+
+  <scroll-view class="box-bottom" scroll-x>
+    <view class="lishi">
+      <view class="zhizhuxia">
+        <view class="zhizhuxia1">
+          <image class="zhizhuxia2" src="https://i.gtimg.cn/qqlive/img/jpgcache/files/qqvideo/hori/9/96sxjj429lictza_big.jpg"></image>
+        </view>
+        <view class="name">蜘蛛侠：英雄远征</view>
+      </view>
+      <view class="shaoer">
+        <view class="shaoer1">
+          <image class="shaoer2" src="//puui.qpic.cn/vcover_hz_pic/0/mzc00200t0ti3vs1565579136/332"></image>
+        </view>
+        <view class="name">玛莎和熊 第1季</view>
+      </view>
+      <view class="zongyi">
+        <view class="zongyi1">
+          <image class="zongyi2" src="https://puui.qpic.cn/vcover_hz_pic/0/mzc00200mn8d2371567132935/332"></image>
+        </view>
+        <view class="name">脱口秀大会 第2季</view>
+      </view>
+      <view class="jilupian">
+        <view class="jilupian1">
+          <image class="jilupian2" src="https://puui.qpic.cn/vcover_vt_pic/0/9ryv0hiwni3r1ck1555486358/220"></image>
+        </view>
+        <view class="name">早餐中国 第一季</view>
+      </view>
+      <view class="dianshiju">
+        <view class="dianshiju1">
+          <image class="dianshiju2" src="https://i.gtimg.cn/qqlive/img/jpgcache/files/qqvideo/m/mzc002000ngfkyj_y.jpg"></image>
+        </view>
+        <view class="name">平行世界 第11集</view>
+      </view>
+      <view class="dongman">
+        <view class="dongman1">
+          <image class="dongman2" src="https://i.gtimg.cn/qqlive/img/jpgcache/files/qqvideo/0/0gsf9fytppje54d_y.jpg"></image>
+        </view>
+        <view class="name">西行记</view>
+      </view>
+    </view>
+  </scroll-view>
+
+
+
+
+
+  <navigator url="/pages/kandan/kandan">
+    <view class="look">
+      <span>我的看单</span>
+      <span class="more">></span>
+    </view>
+  </navigator>
+  <navigator url="/pages/shezhi/shezhi">
+    <view class="setup">
+      <span>设置</span>
+      <span class="more">></span>
+    </view>
+  </navigator>
+</view>
